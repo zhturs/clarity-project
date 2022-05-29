@@ -1,0 +1,49 @@
+body {
+    font-size: 120%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://mobidev.biz/wp-content/uploads/2020/02/blockchain-demo-digital-media-transactions-content-distribution-1.png);
+    font-family: 'Poppins', sans-serif;
+  }
+h1 {
+    color:bisque;
+    font-size: 24px;
+    font-family: "Lucida Console", "Courier New", monospace; 
+}
+div{
+    color:bisque;
+}
+body, textarea, button {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 32px; font-weight: 400;
+}
+
+input {
+    border: 1px solid #00a; padding: 5px 0;
+    border-right: none; border-left: none;
+    margin-bottom: 15px;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+a {
+    color: blue; text-decoration: none;
+}
+
+.result {
+    margin: 20px 0;
+    color: #ccc;
+}

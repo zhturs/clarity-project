@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check dates</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function check() {
+            const name = document.querySelector(".data").value;
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://nodes-testnet.wavesnodes.com/addresses/data/3NBWQabyuLPPD4hpt4As6SayWT2rx7F1tsE/"+name);
+            xhr.onload = () => {
+                const result = document.querySelector(".result");
+                if (JSON.parse(xhr.response).key === name) {
+                    result.innerText = "date is VALID";
+                } else {
+                    result.innerText = "date is NOT VALID";
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <main class="main">
+        <h1>Check the details!</h1>
+        <input type="text" class="data" name="data" placeholder="details"><br>
+        <button onclick="check()">Check validity!</button>
+
+        <div class="result">Is details real?</div>
+    </main>
+</body>
+</html>
